@@ -1,0 +1,46 @@
+create database Shopping
+
+use Shopping
+
+create table Customer
+(CustId int primary key,
+CustName varchar(20),
+city varchar(10),
+State varchar(20) )
+
+create table Products
+(ProdId int primary key,
+ProdName varchar(20),
+UnitPrice int,
+UnitOfMeasurement varchar(5),
+QtyinStock int)
+
+create table Sales_header
+(InvNo int primary key,
+InvDate int,
+InvAmnt int,
+DisPercent int)
+
+create table Sales_Details
+( InvNo int primary key,
+CustId int,
+ProdId int,
+QtySold int )
+
+alter table Sales_Details
+add foreign key (InvNo) references Sales_header(InvNo)
+
+alter table Sales_Details
+add foreign key (CustId) references Customers(CustId)
+
+alter table Sales_Details
+add foreign key (ProdId) references Products(ProdId)
+
+alter table Sales_Details
+drop column QtySold
+
+alter table Sales_Details
+add Qty int
+
+alter table Sales_Details
+Rename column Qty to Quantity
