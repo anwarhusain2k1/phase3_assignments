@@ -1,0 +1,6 @@
+D:\practiceprojects\ConsoleApp1\validate\obj\Debug\validate.csproj.AssemblyReference.cache
+D:\practiceprojects\ConsoleApp1\validate\obj\Debug\validate.csproj.CoreCompileInputs.cache
+D:\practiceprojects\ConsoleApp1\validate\bin\Debug\validate.dll
+D:\practiceprojects\ConsoleApp1\validate\bin\Debug\validate.pdb
+D:\practiceprojects\ConsoleApp1\validate\obj\Debug\validate.dll
+D:\practiceprojects\ConsoleApp1\validate\obj\Debug\validate.pdb
